@@ -289,7 +289,7 @@ function rtas_recaptcha_code() { ?>
                 </div>
             </div>
         </div><?php
-    echo recaptcha_get_html( RTAS_PUBLIC_KEY );
+    echo recaptcha_get_html( RTAS_PUBLIC_KEY, NULL, is_ssl() );
 }
 
 /**
